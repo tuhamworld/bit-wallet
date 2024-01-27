@@ -6,6 +6,10 @@
   height: 100vh;
 }
 
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
 /* Box sizing rules */
 *,
 *::before,

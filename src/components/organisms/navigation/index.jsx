@@ -4,21 +4,19 @@ import { FaCompass } from "react-icons/fa";
 import { FaBell, FaGear } from "react-icons/fa6";
 
 const Navigation = () => {
-  // const [activeNav, setActiveNav] = useState('#wallet');
-
   return (
     <nav>
       <a href="#wallet">
         <PiWalletFill />
       </a>
       <a href="#">
-        <FaCompass/>
+        <FaCompass />
       </a>
       <a href="#">
-        <FaBell/>
+        <FaBell />
       </a>
       <a href="#">
-        <FaGear/>
+        <FaGear />
       </a>
     </nav>
   );
