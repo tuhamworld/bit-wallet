@@ -8,11 +8,11 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "watch-sass": "sass src/scss/main.scss src/css/main.css --watch",
-    "compile-sass": "sass scss/main.scss css/style.comp.css",
+    "watch-sass": "node-sass src/scss/main.scss src/css/main.css --watch",
+    "compile-sass": "node-sass scss/main.scss css/style.comp.css",
     "concat-css": "concat -o css/style.concat.css css/additional.css dist/style.comp.css",
     "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' css/style.concat.css -o css/style.prefix.css",
-    "compress-css": "sass css/style.prefix.css css/style.css --output-style compressed",
+    "compress-css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build-css": "npm-run-all compile-sass concat-css prefix-css compress-css"
   },
   "dependencies": {
@@ -25,6 +25,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "recharts": "^2.11.0",
     "sass": "^1.70.0"
   },
   "devDependencies": {

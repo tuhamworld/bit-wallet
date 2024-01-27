@@ -1,21 +1,26 @@
 import React from "react";
-import Navigation from "./components/organisms/navigation";
-import BuyBTC from "./components/atoms/BuyBTC";
-import SellBTC from "./components/atoms/SellBTC";
 import Bitcoin from "./components/atoms/Bitcoin";
-import OvalButton from "./components/atoms/OvalButton";
+import BuyBTC from "./components/molecules/BuyBTC";
+import SellBTC from "./components/molecules/SellBTC";
+import TimeSeries from "./components/molecules/TimeSeries";
+import Navigation from "./components/organisms/navigation";
+import Cta from "./components/organisms/cta";
+
 
 const App = () => {
   return (
-<>
-<Navigation/>
+    <>
+      
+      <section className="body">
+      <Navigation />
      
-      <BuyBTC/>
-      <SellBTC />
       <Bitcoin />
-      <OvalButton/>
-</>
-  )
+      <TimeSeries />
+
+        <Cta/>
+      </section>
+    </>
+  );
 };
 
 export default App;
