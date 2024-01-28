@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.17",
+    "axios": "^1.6.7",
     "concat": "^1.0.3",
     "node-sass": "^9.0.0",
     "npm-run-all": "^4.1.5",
