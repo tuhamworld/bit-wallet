@@ -28,7 +28,7 @@ const BitcoinChart = () => {
             },
           }
         );
-        console.log(response);
+        // console.log(response);
         setData(response.data.prices);
       } catch (error) {
         console.error("Error fetching data", error);
@@ -37,17 +37,17 @@ const BitcoinChart = () => {
     fetchData();
   }, []);
 
-  return (        
-          
-      <LineChart width={800} height={400} data={data}>
+  return (
+    <div className="chart-container">
+      <LineChart width={350} height={250} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="0" />
         <YAxis />
         <Tooltip />
         <Legend />
         <Line type="Linear" dataKey="1" stroke="#ff981e" />
-              </LineChart>
-
+      </LineChart>
+    </div>
   );
 };
 

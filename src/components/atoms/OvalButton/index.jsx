@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 
 const OvalButton = (props) => {
-  return <div className={`${props.type} oval-btn`}>{props.text}</div>;
+  return <a href={`#${props.url}`} className={`${props.type} oval-btn`}>{props.text}</a>;
 };
 
 export default OvalButton;

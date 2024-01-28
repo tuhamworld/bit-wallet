@@ -1,0 +1,13 @@
+.calendar {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0rem;
+}
+
+
+.active{
+    background-color: #aeb8c4;
+    color: #fff;
+}

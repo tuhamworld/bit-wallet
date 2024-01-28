@@ -1,23 +1,27 @@
 import React, { useState } from "react";
 import OvalButton from "../../atoms/OvalButton";
+import "./index.scss";
 
 const TimeSeries = () => {
-    const [activeTime, setActiveTime] = useState('week');
     return (
         <div className="calendar">
             <OvalButton
-                type="day"
+                url="day"
+                type='day'
                 text="Day"
             />
             <OvalButton
-                type="week"
+                url="week"
+                type={`week active`}
                 text="Week"
             />
             <OvalButton
+                url="month"
                 type="month"
                 text="Month"
             />
             <OvalButton
+                url="year"
                 type="year"
                 text="Year"
             />
