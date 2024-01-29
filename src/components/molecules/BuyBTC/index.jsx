@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../../atoms/Button";
-import "./index.scss";
 import { PiCurrencyDollarSimpleBold } from "react-icons/pi";
 
 const BuyBTC = () => {

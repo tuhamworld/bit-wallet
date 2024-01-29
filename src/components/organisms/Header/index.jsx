@@ -9,8 +9,6 @@ import { TfiNotepad } from "react-icons/tfi";
 import { LuShare } from "react-icons/lu";
 import { IoIosRemoveCircleOutline } from "react-icons/io";
 
-import "./index.scss";
-
 const Header = () => {
   const [isMenu, setIsMenu] = useState(true);
 

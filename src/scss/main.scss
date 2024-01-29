@@ -2,16 +2,16 @@
 @import "./abstract/mixins", "./abstract/variables";
 
 // Base
-@import "./base/normalize", "./base/reset", "./base/typography";
+@import "./base/normalize", "./base/reset", "./base/typography", "./base/bitcoinLogo", "./base/button", "./base/ovalButton";
 
 // Components
-@import "./components/navigation", "./components/cta", "./components/wallet", "./components/calendar";
+@import "./components/cta", "./components/buyBtc", "./components/sellBtc", "./components/timeSeries";
 
 // Layout
-@import "./layout/header";
+@import "./layout/header", "./layout/navigation";
 
 // Theme
 @import "./theme/theme";
 
 // Vendors
-@import "./vendors/chart";
+@import "./vendors/bitcoinChart", "./vendors/wallet";

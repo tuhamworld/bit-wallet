@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "../Button";
 import { FaBitcoinSign } from "react-icons/fa6";
-import "./index.scss";
+import "../../../scss/base/_bitcoinLogo.scss";
+
 
 const BitcoinLogo = () => {
   return (

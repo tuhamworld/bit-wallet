@@ -4,7 +4,6 @@ import OvalButton from "../../atoms/OvalButton";
 import { FaChevronDown } from "react-icons/fa";
 import Cta from "../Cta";
 import axios from "axios";
-import "./index.scss";
 
 const Wallet = () => {
   const [btcPrice, setBtcPrice] = useState(null);
@@ -27,8 +26,6 @@ const Wallet = () => {
 
   const btcBalance = 3.52902;
   const dollarBalance = btcPrice * btcBalance;
-  const showCtaBox = document.querySelector('.show-cta');
-
   const toggleCta = () => {
     setDoMore(!doMore);
   }
