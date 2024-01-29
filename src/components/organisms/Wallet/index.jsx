@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import BitcoinLogo from "../../atoms/BitcoinLogo";
 import OvalButton from "../../atoms/OvalButton";
 import { FaChevronDown } from "react-icons/fa";
+import Cta from "../Cta";
 import axios from "axios";
 import "./index.scss";
 
 const Wallet = () => {
   const [btcPrice, setBtcPrice] = useState(null);
+  const [doMore, setDoMore] = useState(false);
+
   useEffect(() => {
     const fetchBtcPrice = async () => {
       try {
@@ -24,6 +27,12 @@ const Wallet = () => {
 
   const btcBalance = 3.52902;
   const dollarBalance = btcPrice * btcBalance;
+  const showCtaBox = document.querySelector('.show-cta');
+
+  const toggleCta = () => {
+    setDoMore(!doMore);
+  }
+
 
   return (
     <div className="wallet main-container">
@@ -41,7 +50,13 @@ const Wallet = () => {
         <OvalButton url="#" type="wallet-difference" text="-2.32%" />
       </div>
 
-      <FaChevronDown className="arrow" />
+      <FaChevronDown onClick={toggleCta} className="arrow" />
+
+      <div className="show-cta">
+{doMore ? <Cta/> : ''}
+      </div>
+
+
     </div>
   );
 };
