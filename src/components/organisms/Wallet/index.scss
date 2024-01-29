@@ -1,36 +1,57 @@
 .wallet {
   background-color: #fff;
-  padding: 0.5rem 0rem;
   box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 1.5rem;
-
-}
-
-.logo-text{
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
   
-  color: #4c5968;
-}
 
-.bitcoin-text{
-  display: flex;
-  align-items: center;
-  gap: 7rem;
-
-  .bitcoin-text__btc{
-    color: #aeb8c4;
+  .wallet__btc {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
   }
-}
 
-.wallet-balance{
-  display: flex;
-  justify-content: space-between;
-  max-width: 250px;
-  .wallet-difference{
-    background-color: #ee225d;
-    color: #fff;
+  .logo-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #4c5968;
+    font-weight: bold;
+  }
+
+  .bitcoin-text {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+
+    .bitcoin-text__btc {
+      color: #aeb8c4;
+    }
+  }
+
+  .wallet-balance {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    .wallet-difference {
+      background-color: #ee225d;
+      color: #fff;
+    }
+    span{
+      font-size: 1.1rem;
+      color: #aeb8c4;
+      
+    }
+  }
+
+  .arrow {
+    position: relative;
+    left: 50%;
+    top: 10px;
+    
+    
   }
 }

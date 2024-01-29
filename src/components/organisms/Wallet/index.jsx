@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BitcoinLogo from "../../atoms/BitcoinLogo";
 import OvalButton from "../../atoms/OvalButton";
+import { FaChevronDown } from "react-icons/fa";
 import axios from "axios";
 import "./index.scss";
 
@@ -21,8 +22,11 @@ const Wallet = () => {
     fetchBtcPrice();
   }, []);
 
+  const btcBalance = 3.52902;
+  const dollarBalance = btcPrice * btcBalance;
+
   return (
-    <div className="wallet">
+    <div className="wallet main-container">
       <div className="bitcoin-text">
         <span className="logo-text">
           <BitcoinLogo /> Bitcoin
@@ -30,17 +34,14 @@ const Wallet = () => {
         <span className="bitcoin-text__btc">BTC</span>
       </div>
 
-          <p className="wallet__btc">3.529020 BTC</p>
-          
+      <p className="wallet__btc">{`${btcBalance} BTC`}</p>
+
       <div className="wallet-balance">
-        
-              <span>${btcPrice * 3.52902}</span>
-              <OvalButton
-                  url="#"
-                  type="wallet-difference"
-                  text="-2.32%"
-              />
+        <span>{`${dollarBalance.toFixed(3)} USD`}</span>
+        <OvalButton url="#" type="wallet-difference" text="-2.32%" />
       </div>
+
+      <FaChevronDown className="arrow" />
     </div>
   );
 };

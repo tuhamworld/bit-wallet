@@ -7,6 +7,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  ResponsiveContainer
 } from "recharts";
 import axios from "axios";
 import "./index.scss";
@@ -38,8 +39,11 @@ const BitcoinChart = () => {
   }, []);
 
   return (
-    <div className="chart-container">
-      <LineChart width={350} height={250} data={data}>
+    <div className="chart-container main-container">
+
+      <ResponsiveContainer width="100%" height={200}>
+
+      <LineChart data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="0" />
         <YAxis />
@@ -47,6 +51,7 @@ const BitcoinChart = () => {
         <Legend />
         <Line type="Linear" dataKey="1" stroke="#ff981e" />
       </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 };

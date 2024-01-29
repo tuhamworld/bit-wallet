@@ -4,7 +4,7 @@ import "./index.scss";
 
 const TimeSeries = () => {
     return (
-        <div className="calendar">
+        <div className="calendar main-container">
             <OvalButton
                 url="day"
                 type='day'

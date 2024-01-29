@@ -1,6 +1,10 @@
 .body {
     background-color: #f3f6f9;
-    padding: 0.5rem 0.5rem;
-    max-width: 375px;
-    max-height: 700px;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.main-container {
+    margin: 1.5rem 1.5rem;
 }

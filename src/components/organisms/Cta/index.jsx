@@ -5,7 +5,7 @@ import "./index.scss";
 
 const Cta = () => {
   return (
-    <div className="cta-container">
+    <div className="cta-container main-container">
       <BuyBTC />
       <SellBTC />
     </div>
