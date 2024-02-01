@@ -10,8 +10,7 @@
     "preview": "vite preview",
     "watch-sass": "node-sass src/scss/main.scss src/css/main.css --watch",
     "compile-sass": "node-sass src/scss/main.scss src/css/style.comp.css",
-    "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' src/css/main.scss -o src/css/style.prefix.css",
-    "build-css": "npm-run-all compile-sass prefix-css"
+    "build-css": "npm-run-all compile-sass"
   },
   "dependencies": {
     "autoprefixer": "^10.4.17",
