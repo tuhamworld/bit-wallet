@@ -5,10 +5,9 @@
   background-color: #fff;
   box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: 1rem;
-  // max-width: 250px;
+  padding: 1.5rem;
   .text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #4c5968;
   }
 
@@ -22,7 +21,7 @@
     top: 0;
     right: -100%;
     width: 70%;
-    max-width: 280px; /* Set a maximum width */
+    max-width: 300px; /* Set a maximum width */
     height: 40%;
     background-color: #fff;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
@@ -30,7 +29,6 @@
     z-index: 2;
     border-radius: 20px;
     min-height: 95vh;
-   margin: auto;
   }
 
   .nav-menu a {

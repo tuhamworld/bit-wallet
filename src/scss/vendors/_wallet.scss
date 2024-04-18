@@ -2,12 +2,10 @@
     background-color: #fff;
     box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
   
     .wallet__btc {
       font-size: 2rem;
@@ -50,16 +48,10 @@
   
     .arrow {
       position: relative;
-      left: 40%;
-      top: 10px;     
+      left: 50%;
+      top: 10px;
       
-    }
-
-    .downArrow{
-      position: relative;
-      left: 40%;
-      top: 10px; 
-      transform: rotate(180deg);
+      
     }
   }
 

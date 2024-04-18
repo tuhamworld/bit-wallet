@@ -28,7 +28,8 @@ const Wallet = () => {
   const dollarBalance = btcPrice * btcBalance;
   const toggleCta = () => {
     setDoMore(!doMore);
-  };
+  }
+
 
   return (
     <div className="wallet main-container">
@@ -46,9 +47,13 @@ const Wallet = () => {
         <OvalButton url="#" type="wallet-difference" text="-2.32%" />
       </div>
 
-      <FaChevronDown onClick={toggleCta} className={doMore ? "downArrow" : "arrow"} />
+      <FaChevronDown onClick={toggleCta} className="arrow" />
 
-      <div className="show-cta">{doMore ? <Cta /> : ""}</div>
+      <div className="show-cta">
+{doMore ? <Cta/> : ''}
+      </div>
+
+
     </div>
   );
 };
