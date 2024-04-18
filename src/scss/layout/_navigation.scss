@@ -2,7 +2,8 @@ nav {
   background-color: #fff;
   width: 100%;
   display: block;
-  padding: 0.4rem 1rem;
+  // padding: 0.4rem 1rem;
+  padding: 2% 2%;
   z-index: 2;
   position: fixed;
   justify-content: center;
@@ -10,6 +11,8 @@ nav {
   display: flex;
   gap: 0.8rem;
   backdrop-filter: blur(15px);
+  margin: auto;
+ 
 
   a {
     color: #aeb8c4;

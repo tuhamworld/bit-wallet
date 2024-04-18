@@ -26,7 +26,7 @@ const Header = () => {
         className={isMenu ? "nav-icon" : "nav-menu__show"}
       />
 
-      {/* Popup box */}
+      {/* Popup box  starts here */}
       <div className="nav-menu">
         <BsThreeDots
           onClick={toggleMenu}
@@ -52,6 +52,8 @@ const Header = () => {
           </span>
         </div>
       </div>
+
+      {/* Pop up box ends here */}
     </div>
   );
 };
